@@ -10,12 +10,12 @@ const app = express();
 // json 형태로 오는 요청의 본문을 해석
 app.user(bodyParser.json());
 
-db.pool.query(`CREATE TABLE lists (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    value TEXT)
-    )`, (err, results, fileds) => {
-        console.log('results', results)
-    })
+// db.pool.query(`CREATE TABLE lists (
+//     id INTEGER PRIMARY KEY AUTOINCREMENT,
+//     value TEXT)
+//     )`, (err, results, fileds) => {
+//         console.log('results', results)
+//     })
 
 app.listen(5000, () => {
     console.log('애플리케이션이 5000번 포트에서 접속')

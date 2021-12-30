@@ -1,7 +1,7 @@
 FROM node:alpine
 
-RUN mkdir -p /usr/src/app/node_modules/.cache
-RUN chmod -R 777 /usr/src/app
+RUN mkdir -p /app/node_modules/.cache
+RUN chmod -R 777 /app
 
 WORKDIR /app
 
